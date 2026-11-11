@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecni Express L&V — Ciudad de México</title>
+<meta name="description" content="Servicio Técnico Express L&V en Ciudad de México: reparación de lavadoras, refrigeradores y aires acondicionados. Mantenimiento preventivo y correctivo, todas las marcas. Llámanos al 56 3985 5487 o escríbenos por WhatsApp al 56 5153 7145.">
+<meta property="og:title" content="Servicio Técnico Express L&V — Ciudad de México">
+<meta property="og:description" content="Reparación de lavadoras, refrigeradores, aires acondicionados y más. Toda la Ciudad de México. Llámanos o escríbenos por WhatsApp.">
+<meta property="og:image" content="img/camioneta.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#15803d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/logo.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","areaServed":"Ciudad de México","description":"Reparación de línea blanca, instalación de aires acondicionados, mantenimiento correctivo y preventivo, reparación de refrigeradores, congeladores y cavas.","name":"Servicio Técnico Express L&V","telephone":"+52-56-3985-5487","url":"https://tecniexpresslvmx.github.io/tecni-express-mx/"}
+</script>
+<style>
+:root{--blue:#15803d;--blue-d:#14532d;--blue-l:#dcfce7;--sky:#f0fdf4;--ink:#0f172a;--mut:#475569;--bg:#fff;--line:#dcfce7;--wa:#25d366;--red:#dc2626;--red-d:#b91c1c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+section{padding:56px 0}
+h2{font-size:clamp(26px,3.6vw,34px);letter-spacing:-.8px;margin-bottom:8px;color:var(--blue-d)}
+.sub{color:var(--mut);margin-bottom:28px;max-width:640px;font-size:17px}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:800;padding:14px 26px;border-radius:12px;font-size:16px;border:0;cursor:pointer}
+.btn:hover{background:var(--blue-d)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#1eb856}
+.btn-white{background:#fff;color:var(--blue-d)}
+.btn-call{background:var(--red)}
+.btn-call:hover{background:var(--red-d)}
+/* tricolor stripe */
+.tricolor{display:flex;height:7px}
+.tricolor span{flex:1}
+.tricolor span:nth-child(1){background:#15803d}
+.tricolor span:nth-child(2){background:#fff}
+.tricolor span:nth-child(3){background:#dc2626}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.rv-l{opacity:0;transform:translateX(-30px);transition:opacity .7s ease,transform .7s ease}
+.rv-l.in{opacity:1;transform:none}
+.rv-r{opacity:0;transform:translateX(30px);transition:opacity .7s ease,transform .7s ease}
+.rv-r.in{opacity:1;transform:none}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.5px;color:var(--blue-d)}
+.logo img{width:46px;height:46px;border-radius:12px;border:2px solid var(--blue-l)}
+.logo small{display:block;font-size:11px;color:var(--mut);font-weight:700;letter-spacing:1px;text-transform:uppercase}
+header nav{margin-left:auto;display:flex;gap:6px;align-items:center}
+header nav a{padding:8px 10px;border-radius:8px;font-weight:600;font-size:14px;color:var(--mut)}
+header nav a:hover{color:var(--blue);background:var(--sky)}
+header nav a.call{background:var(--red);color:#fff;padding:9px 16px;border-radius:999px}
+header nav a.wa{background:var(--wa);color:#fff;padding:9px 16px;border-radius:999px}
+@media(max-width:680px){header nav a:not(.call):not(.wa){display:none}}
+/* hero */
+.hero{position:relative;color:#fff;padding:0;overflow:hidden;min-height:92vh;display:flex;align-items:center}
+.hero .bg{position:absolute;inset:0;background:url('img/camioneta.jpg') center 30%/cover no-repeat}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,83,45,.85) 0%,rgba(21,128,61,.72) 55%,rgba(15,23,42,.88) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:110px;text-align:center}
+.hero .pill{display:inline-block;background:#fff;color:var(--blue-d);font-weight:800;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(36px,6.4vw,62px);line-height:1.04;letter-spacing:-1.5px;max-width:760px;margin:0 auto}
+.hero .lead{font-size:19px;color:#dbeafe;max-width:620px;margin:18px auto 28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.hero .cta .btn{padding:15px 28px;font-size:17px}
+.hero .nums{margin-top:26px;font-size:15px;color:#bfdbfe}
+.hero .nums b{color:#fff}
+/* strip */
+.strip{background:var(--blue-d);color:#fff;padding:0}
+.strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:20px;padding-bottom:20px;text-align:center}
+.strip .n{font-weight:800;font-size:17px}
+.strip .l{font-size:13px;color:#bbf7d0}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+.step{background:var(--sky);border:1px solid var(--line);border-radius:18px;padding:24px}
+.step .num{width:44px;height:44px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:14px}
+.step h3{font-size:18px;margin-bottom:6px;color:var(--blue-d)}
+.step p{color:var(--mut);font-size:15px}
+/* services horizontal scroll */
+.serv-sec{background:var(--sky)}
+.serv-row{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 20px;-webkit-overflow-scrolling:touch}
+.serv-row::-webkit-scrollbar{height:8px}
+.serv-row::-webkit-scrollbar-thumb{background:#86efac;border-radius:8px}
+.serv{flex:0 0 320px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 4px 16px rgba(20,83,45,.08)}
+@media(max-width:480px){.serv{flex-basis:82vw}}
+.serv img{width:100%;height:200px;object-fit:cover}
+.serv .body{padding:18px}
+.serv .tag{display:inline-block;background:var(--blue-l);color:var(--blue-d);font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-bottom:8px}
+.serv h3{font-size:19px;margin-bottom:6px;color:var(--blue-d)}
+.serv p{color:var(--mut);font-size:14.5px}
+.swipe-hint{text-align:right;color:var(--mut);font-size:13px;margin-top:2px}
+/* multimarca band */
+.multi{background:linear-gradient(120deg,var(--blue-d) 0%,var(--blue) 60%,#16a34a 100%);color:#fff;text-align:center}
+.multi .wrap{padding-top:46px;padding-bottom:46px}
+.multi h2{color:#fff;font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-1px}
+.multi p{color:#bfdbfe;font-size:18px;margin-top:10px}
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.gal{grid-template-columns:1fr}}
+.gal figure{border-radius:16px;overflow:hidden;position:relative;cursor:pointer;margin:0}
+.gal figure:nth-child(3n+1){grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;min-height:220px}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(15,23,42,.85),transparent);color:#fff;padding:26px 14px 12px;font-size:14px;font-weight:600}
+.lb{position:fixed;inset:0;background:rgba(15,23,42,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
+.lb.open{display:flex}
+.lb img{max-width:96vw;max-height:88vh;border-radius:12px}
+.lb .x{position:absolute;top:16px;right:20px;color:#fff;font-size:34px;cursor:pointer;background:none;border:0}
+/* form */
+.order{background:var(--blue-d);color:#fff}
+.order h2{color:#fff}
+.order .sub{color:#bfdbfe}
+.order form{background:#fff;color:var(--ink);border-radius:20px;padding:26px;max-width:560px;box-shadow:0 16px 48px rgba(0,0,0,.3)}
+.order label{display:block;font-weight:700;font-size:14px;margin:14px 0 5px}
+.order label:first-child{margin-top:0}
+.order input,.order textarea,.order select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font-size:15px;font-family:inherit}
+.order input:focus,.order textarea:focus,.order select:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+.order .btn{width:100%;margin-top:20px;text-align:center}
+/* contact */
+.contact{text-align:center}
+.contact .nums2{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:22px 0 10px}
+.contact .num-card{background:var(--sky);border:1px solid var(--line);border-radius:16px;padding:20px 26px;min-width:250px}
+.contact .num-card .k{font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue)}
+.contact .num-card .v{font-size:24px;font-weight:800;color:var(--blue-d);margin:6px 0}
+.contact .num-card a{display:inline-block;margin-top:6px;font-weight:800;color:var(--blue)}
+/* footer */
+footer{background:var(--ink);color:#94a3b8;padding:28px 0;text-align:center;font-size:14px}
+footer b{color:#fff}
+/* sticky bottom bar */
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(15,23,42,.12)}
+.stickybar a{flex:1;text-align:center;padding:14px 8px;font-weight:800;font-size:16px}
+.stickybar a.call{background:var(--red);color:#fff}
+.stickybar a.wa{background:var(--wa);color:#fff}
+body{padding-bottom:52px}
+</style>
+</head>
+<body>
+<div class="tricolor"><span></span><span></span><span></span></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#"><img src="img/logo.png" alt="Tecni Express L&V"><span>Express L&amp;V<small>Servicio técnico · CDMX</small></span></a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Trabajos</a>
+      <a href="#cotizar">Cotizar</a>
+      <a class="call" href="tel:+525639855487">Llamar</a>
+      <a class="wa" href="https://wa.me/525651537145?text=Hola%20Tecni%20Express%20L%26V%2C%20quiero%20una%20cotizaci%C3%B3n">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="bg"></div>
+  <div class="wrap">
+    <span class="pill">Ciudad de México</span>
+    <h1>Servicio Técnico Express L&amp;V</h1>
+    <p class="lead">Reparación de lavadoras, refrigeradores y aires acondicionados. Mantenimiento preventivo y correctivo, todas las marcas, en toda la Ciudad de México.</p>
+    <div class="cta">
+      <a class="btn btn-call" href="tel:+525639855487">📞 Llamar: 56 3985 5487</a>
+      <a class="btn btn-wa" href="https://wa.me/525651537145?text=Hola%20Tecni%20Express%20L%26V%2C%20quiero%20una%20cotizaci%C3%B3n">WhatsApp: 56 5153 7145</a>
+      <a class="btn" href="tecni-express-mx.apk" style="background:rgba(255,255,255,.12);border-color:#fff;color:#fff">📱 Descargar app</a>
+    </div>
+    <p class="nums">Llamadas <b>56 3985 5487</b> · WhatsApp <b>56 5153 7145</b></p>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><div class="n">Línea blanca</div><div class="l">Reparación</div></div>
+    <div><div class="n">Aires acondicionados</div><div class="l">Instalación y mantenimiento</div></div>
+    <div><div class="n">Refrigeración</div><div class="l">Doméstica y comercial</div></div>
+    <div><div class="n">Servicio a domicilio</div><div class="l">Toda la Ciudad de México</div></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Así de fácil es</h2>
+    <p class="sub rv">Nos contactas, vamos a tu domicilio, diagnosticamos y te cotizamos usando refacciones originales.</p>
+    <div class="steps">
+      <div class="step rv"><div class="num">1</div><h3>Nos contactas</h3><p>Llámanos o escríbenos por WhatsApp con tu equipo y la falla que tiene.</p></div>
+      <div class="step rv"><div class="num">2</div><h3>Vamos a tu domicilio</h3><p>El técnico va a tu casa en la Ciudad de México a revisar tu equipo.</p></div>
+      <div class="step rv"><div class="num">3</div><h3>Diagnosticamos y te cotizamos</h3><p>Te decimos qué falla y cuánto cuesta la reparación, usando refacciones originales.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="serv-sec" id="servicios">
+  <div class="wrap">
+    <h2 class="rv-l">Lo que reparamos por ti</h2>
+    <p class="sub rv-l">Lavadoras, refrigeradores, aires acondicionados, congeladores y más, en toda la Ciudad de México.</p>
+    <div class="serv-row" id="servRow">
+      <article class="serv">
+        <img src="img/lavadora-frente.jpg" alt="Lavadoras" loading="lazy">
+        <div class="body"><span class="tag">Lavadoras y secadoras</span><h3>Lavadoras, secadoras y centros de lavado</h3><p>Reparación de lavadoras, secadoras, lava-secadoras y centros de lavado de todas las marcas. Fallas de centrifugado, llenado, drenado y tarjetas.</p></div>
+      </article>
+      <article class="serv">
+        <img src="img/refri-limpio.jpg" alt="Refrigeradores" loading="lazy">
+        <div class="body"><span class="tag">Refrigeradores</span><h3>Refrigeradores domésticos y comerciales</h3><p>Reparación de refrigeradores domésticos y comerciales: mesas frías, cuartos fríos, vitrinas y enfriadores. No enfría, hace escarcha, tira agua.</p></div>
+      </article>
+      <article class="serv">
+        <img src="img/aire-manometros.jpg" alt="Aires acondicionados" loading="lazy">
+        <div class="body"><span class="tag">Aires acondicionados</span><h3>Instalación de aires</h3><p>Instalación de aires acondicionados tipo mini split y de ventana, con carga de gas y prueba de funcionamiento.</p></div>
+      </article>
+      <article class="serv">
+        <img src="img/refri-compresor.jpg" alt="Mantenimiento" loading="lazy">
+        <div class="body"><span class="tag">Mantenimiento</span><h3>Mantenimiento preventivo y correctivo</h3><p>Mantenimiento preventivo y correctivo para que tus equipos duren más y gasten menos luz.</p></div>
+      </article>
+      <article class="serv">
+        <img src="img/tecnico-trabajando.jpg" alt="Congeladores y cavas" loading="lazy">
+        <div class="body"><span class="tag">Congeladores y cavas</span><h3>Congeladores y cavas de botellas</h3><p>Reparación de congeladores horizontales y verticales, y cavas de botellas para tu negocio.</p></div>
+      </article>
+      <article class="serv">
+        <img src="img/tarjeta-electronica.jpg" alt="Tarjetas electrónicas" loading="lazy">
+        <div class="body"><span class="tag">Electrónica</span><h3>Tarjetas electrónicas</h3><p>Diagnóstico y reparación de tarjetas electrónicas, sensores y componentes.</p></div>
+      </article>
+    </div>
+    <p class="swipe-hint">Desliza → para ver todos los servicios</p>
+  </div>
+</section>
+
+<section class="multi">
+  <div class="wrap rv">
+    <h2>🔧 REPARAMOS MULTIMARCAS</h2>
+    <p>Todas las marcas • Un solo técnico • Servicio a domicilio en toda la Ciudad de México</p>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <h2 class="rv-r">Nuestros trabajos</h2>
+    <p class="sub rv-r">Trabajo real, en casas y negocios de la Ciudad de México.</p>
+    <div class="gal" id="galeriaGrid"></div>
+  </div>
+</section>
+
+<div class="lb" id="lightbox"><button class="x" id="lbClose" aria-label="Cerrar">×</button><img id="lbImg" alt=""></div>
+
+<section class="order" id="cotizar">
+  <div class="wrap">
+    <h2 class="rv">Pide tu cotización</h2>
+    <p class="sub rv">Llena el formulario y tu mensaje llega directo a nuestro WhatsApp.</p>
+    <form id="cotizaForm" class="rv">
+      <label for="fEquipo">¿Qué equipo es?</label>
+      <select id="fEquipo">
+        <option>Lavadora</option>
+        <option>Secadora</option>
+        <option>Refrigerador</option>
+        <option>Aire acondicionado</option>
+        <option>Congelador</option>
+        <option>Otro</option>
+      </select>
+      <label for="fFalla">¿Qué falla tiene?</label>
+      <textarea id="fFalla" rows="3" required placeholder="Ej. No centrifuga, no enfría, tira agua..."></textarea>
+      <label for="fNombre">Tu nombre</label>
+      <input id="fNombre" required placeholder="Ej. María García">
+      <label for="fZona">¿En qué zona de la CDMX estás?</label>
+      <input id="fZona" required placeholder="Ej. Iztapalapa, Coyoacán, Azcapotzalco...">
+      <button class="btn btn-wa" type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2 class="rv">Contacto</h2>
+    <p class="sub rv" style="margin-left:auto;margin-right:auto">Llámanos o escríbenos, como te sea más fácil.</p>
+    <div class="nums2">
+      <div class="num-card rv-l">
+        <div class="k">Llamadas</div>
+        <div class="v">56 3985 5487</div>
+        <a href="tel:+525639855487">Llamar ahora →</a>
+      </div>
+      <div class="num-card rv-r">
+        <div class="k">WhatsApp</div>
+        <div class="v">56 5153 7145</div>
+        <a href="https://wa.me/525651537145?text=Hola%20Tecni%20Express%20L%26V%2C%20quiero%20una%20cotizaci%C3%B3n">Escribir por WhatsApp →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:28px"><a class="btn" href="tecni-express-mx.apk">📱 Descargar la aplicación Express L&amp;V CDMX</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>Servicio Técnico Express L&amp;V</b> — Ciudad de México<br>
+    Llamadas: 56 3985 5487 · WhatsApp: 56 5153 7145
+  </div>
+</footer>
+
+<div class="stickybar">
+  <a class="call" href="tel:+525639855487">📞 Llamar</a>
+  <a class="wa" href="https://wa.me/525651537145?text=Hola%20Tecni%20Express%20L%26V%2C%20quiero%20una%20cotizaci%C3%B3n">💬 WhatsApp</a>
+</div>
+
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+var FOTOS=[
+["img/lavadora-reparacion.jpg","Reparación de lavadora en domicilio"],
+["img/centro-lavado.jpg","Centro de lavado reparado"],
+["img/lavadora-carga-superior.jpg","Lavadora de carga superior"],
+["img/refri-compresor-cobre.jpg","Compresor de refrigerador"],
+["img/tarjeta-refri.jpg","Tarjeta de refrigerador"],
+["img/lavadora-lavanderia.jpg","Lavadora en lavandería"],
+["img/secadora-camioneta.jpg","Secadora lista para entrega"],
+["img/refri-serpentin.jpg","Serpentín de refrigerador"],
+["img/lavanderia-torre.jpg","Torre de lavandería"],
+["img/refri-inteligente.jpg","Refrigerador inteligente"],
+["img/hero-aire.jpg","Aire acondicionado instalado"],
+["img/lavadora-panel.jpg","Panel de control de lavadora, revisión completa"],
+["img/centro-lavado-2.jpg","Centro de lavado en servicio"],
+["img/lavadora-tapa.jpg","Lavadora, tapa superior"],
+["img/refri-compresor-oscuro.jpg","Compresor de refrigerador"],
+["img/lavadora-tina.jpg","Tina de lavadora"]];
+var grid=document.getElementById('galeriaGrid');
+FOTOS.forEach(function(f){
+  var fig=document.createElement('figure');
+  var im=document.createElement('img');
+  im.src=f[0]; im.alt=f[1]; im.loading='lazy';
+  var cap=document.createElement('figcaption'); cap.textContent=f[1];
+  fig.appendChild(im); fig.appendChild(cap);
+  fig.addEventListener('click',function(){openLb(f[0],f[1]);});
+  grid.appendChild(fig);
+});
+var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg');
+function openLb(src,alt){lbImg.src=src;lbImg.alt=alt;lb.classList.add('open');}
+document.getElementById('lbClose').addEventListener('click',function(){lb.classList.remove('open');});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open');});
+document.getElementById('cotizaForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var eq=document.getElementById('fEquipo').value;
+  var fa=document.getElementById('fFalla').value.trim();
+  var n=document.getElementById('fNombre').value.trim();
+  var z=document.getElementById('fZona').value.trim();
+  var msg='Hola Tecni Express L&V, quiero una cotización.%0A%0AEquipo: '+encodeURIComponent(eq)+'%0AFalla: '+encodeURIComponent(fa)+'%0ANombre: '+encodeURIComponent(n)+'%0AZona (CDMX): '+encodeURIComponent(z);
+  window.open('https://wa.me/525651537145?text='+msg,'_blank');
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});
+  document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(function(el){el.classList.add('in');});}
+</script>
+</body>
+</html>
